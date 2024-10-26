@@ -10,7 +10,7 @@ Sử dụng lệnh sau để clone dự án:
 git clone <link_to_your_repository>
 cd <tên_thư_mục_clone>
 ```
-### Bước 2: Chạy Dockẻ Compose
+### Bước 2: Chạy Docker Compose
 Khởi động các dịch vụ Docker bằng lệnh:
 ```bash
 docker compose up -d
