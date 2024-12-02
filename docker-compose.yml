@@ -39,7 +39,17 @@ services:
       - "8080:80"
     networks:
       - laravel
-
+# Ngrok service
+  ngrok:
+    image: ngrok/ngrok:latest
+    environment:
+      NGROK_AUTHTOKEN: auth_key
+    depends_on:
+      - web
+    command: http --log=stdout web:80
+    networks:
+      - laravel
+      
 volumes:
   mysql_data:
 
